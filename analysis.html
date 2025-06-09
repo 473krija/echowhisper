@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoWhisper-Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/analysis.css') }}" />
+
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora&family=Noto+Music&family=Playfair+Display&family=Poppins&family=Tangerine&family=Roboto+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+              <img src="{{ url_for('static', filename='images/logo_W.png') }}" alt="logo">
+            </div>
+            <div class="headings">
+              <a href="{{ url_for('index') }}" class="nav-link">HOME</a>
+              <a href="{{ url_for('tools') }}" class="nav-link">TOOLS USED</a>
+            </div>
+        </div>
+        
+        <h1>ANALYSIS OVER TRENDS</h1>
+
+        <div class="border">
+          <div class="dataset-container">
+            <h2 style="text-align: center; color: black; font-family: 'Roboto Slab',serif;font-size: 40px ;">Survey Dataset</h2>
+
+            <h2 style="color: #5a189a; margin-bottom: 16px;">Original Dataset (First 10 Rows)</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>preferred_era</th>
+                  <th>freq_90s</th>
+                  <th>freq_2000s</th>
+                  <th>freq_2020s</th>
+                  <th>emotional_era</th>
+                  <th>timeless_quality</th>
+                  <th>social_era</th>
+                  <th>social_media_influence</th>
+                  <th>family_influence</th>
+                  <th>discovery_platforms</th>
+                  <th>old_music_feelings</th>
+                  <th>grandparents_influence</th>
+                  <th>cultural_influence</th>
+                  <th>culture_event_reminder</th>
+                  <th>modern_trend_focus</th>
+                  <th>unique_emotions</th>
+                  <th>memory_connection</th>
+                  <th>old_movie_frequency</th>
+                  <th>retro_trend_youth</th>
+                  <th>landscape_uniqueness</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Row 1 -->
+                <tr><td>2000s</td><td>occasionlly</td><td>weekly</td><td>weekly</td><td>all equally</td><td>strongly agree</td><td>a mix of both 90's and 2000's</td><td>yes</td><td>yes</td><td>radio,movies,tv shows</td><td>more connected, more relaxing</td><td>yes</td><td>no</td><td>never thought about it</td><td>agree</td><td>all of the above</td><td>yes</td><td>sometimes</td><td>yes</td><td>yes</td></tr>
+                <tr><td>2000s</td><td>occasionlly</td><td>daily</td><td>daily</td><td>all equally</td><td>strongly agree</td><td>a mix of all</td><td>yes</td><td>yes</td><td>streaming platforms like spotify or youtube, social media</td><td>more connected</td><td>somewhat</td><td>yes</td><td>yes</td><td>strongly agree</td><td>all of the above</td><td>yes</td><td>sometimes</td><td>yes</td><td>yes</td></tr>
+                <tr><td>2000s</td><td>rarely</td><td>rarely</td><td>rarely</td><td>2000's</td><td>agree</td><td>a mix of all</td><td>yes</td><td>yes</td><td>social media</td><td>more relaxing</td><td>yes</td><td>yes</td><td>No</td><td>agree</td><td>all of the above</td><td>somewhat</td><td>never</td><td>No</td><td>no</td></tr>
+                <tr><td>2000s</td><td>occasionlly</td><td>weekly</td><td>daily</td><td>2000's</td><td>neutral</td><td>a mix of all</td><td>no</td><td>no</td><td>radio,movies,tv shows</td><td>more connected, more relaxing</td><td>no</td><td>no</td><td>No</td><td>agree</td><td>nostalgic</td><td>yes</td><td>sometimes</td><td>yes</td><td>somewhat</td></tr>
+                <tr><td>90s</td><td>weekly</td><td>weekly</td><td>daily</td><td>all equally</td><td>strongly agree</td><td>a mix of all</td><td>yes</td><td>no</td><td>social media, radio,movies,tv shows</td><td>more connected, more relaxing</td><td>no</td><td>no</td><td>never thought about it</td><td>agree</td><td>all of the above</td><td>somewhat</td><td>rarely</td><td>yes</td><td>somewhat</td></tr>
+                <tr><td>2020s</td><td>rarely</td><td>occasionlly</td><td>daily</td><td>all equally</td><td>disagree</td><td>a mix of all</td><td>yes</td><td>no</td><td>streaming platforms like spotify or youtube, social media</td><td>more relaxing</td><td>somewhat</td><td>somewhat</td><td>yes</td><td>strongly agree</td><td>nostalgic</td><td>yes</td><td>sometimes</td><td>yes</td><td>yes</td></tr>
+                <tr><td>90s</td><td>occasionlly</td><td>weekly</td><td>weekly</td><td>90's</td><td>neutral</td><td>2000's</td><td>yes</td><td>yes</td><td>social media</td><td>more connected</td><td>yes</td><td>no</td><td>yes</td><td>agree</td><td>all of the above</td><td>yes</td><td>sometimes</td><td>yes</td><td>somewhat</td></tr>
+                <tr><td>90s</td><td>daily</td><td>weekly</td><td>occasionlly</td><td>90's</td><td>strongly agree</td><td>90's</td><td>no</td><td>both</td><td>streaming platforms like spotify or youtube</td><td>more connected</td><td>yes</td><td>yes</td><td>yes</td><td>strongly agree</td><td>happiness</td><td>yes</td><td>frequently</td><td>yes</td><td>yes</td></tr>
+                <tr><td>2000s</td><td>weekly</td><td>daily</td><td>daily</td><td>2000's</td><td>strongly agree</td><td>2020's</td><td>sometimes</td><td>yes</td><td>streaming platforms like spotify or youtube, social media</td><td>more connected</td><td>yes</td><td>no</td><td>never thought about it</td><td>agree</td><td>nostalgic</td><td>yes</td><td>sometimes</td><td>yes</td><td>somewhat</td></tr>
+                <tr><td>90s</td><td>daily</td><td>daily</td><td>daily</td><td>90's</td><td>strongly agree</td><td>a mix of both 90's and 2000's</td><td>yes</td><td>yes</td><td>streaming platforms like spotify or youtube</td><td>more connected</td><td>yes</td><td>yes</td><td>yes</td><td>strongly agree</td><td>happiness</td><td>yes</td><td>frequently</td><td>yes</td><td>yes</td></tr>
+              </tbody>
+            </table>
+          
+          </div>
+          <div style="padding-top:30px ;" class="container1">
+            <section style="background: #f6f3fb; padding: 20px; border-radius: 20px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); font-family: 'Poppins', sans-serif;">
+              <h2 style="color: #5a189a; margin-bottom: 16px;">📊 Preprocessed Dataset Preview (First 10 Rows)</h2>
+              <div style="overflow-x: auto;">
+                <table style="border-collapse: collapse; width: 100%; min-width: 1000px; border: 1px solid #e0d4f7;">
+                  <thead style="background: #eaddf8; color: #4a148c;">
+                    <tr>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">preferred_era</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">freq_90s</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">freq_2000s</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">freq_2020s</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">emotional_era</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">timeless_quality</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">social_era</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">social_media_influence</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">family_influence</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">discovery_method</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">old_music_features_singer's voice</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">old_music_features_emotional depth</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">old_music_features_cultural connections</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">old_music_feelings_more connected</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">old_music_feelings_more relaxing</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">unique_emotions_happiness</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">unique_emotions_sadness</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">unique_emotions_nostalgic</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">unique_emotions_reflecting yourself</th>
+                      <th style="padding: 10px; border: 1px solid #d0c0f2;">unique_emotions_all of the above</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td style="padding: 8px;">1</td><td>2</td><td>3</td><td>3</td><td>3</td><td>4</td><td>4</td><td>2</td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+                    <tr><td style="padding: 8px;">1</td><td>2</td><td>4</td><td>4</td><td>3</td><td>4</td><td>3</td><td>2</td><td>2</td><td>2</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+                    <tr><td style="padding: 8px;">1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>3</td><td>3</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+                    <tr><td style="padding: 8px;">1</td><td>2</td><td>3</td><td>4</td><td>1</td><td>2</td><td>3</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+                    <tr><td style="padding: 8px;">0</td><td>3</td><td>3</td><td>4</td><td>3</td><td>4</td><td>3</td><td>1</td><td>0</td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+                    <tr><td style="padding: 8px;">2</td><td>1</td><td>2</td><td>4</td><td>3</td><td>1</td><td>3</td><td>2</td><td>0</td><td>2</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+                    <tr><td style="padding: 8px;">0</td><td>2</td><td>3</td><td>3</td><td>0</td><td>2</td><td>1</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+                    <tr><td style="padding: 8px;">0</td><td>4</td><td>3</td><td>2</td><td>0</td><td>4</td><td>0</td><td>0</td><td>2</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                    <tr><td style="padding: 8px;">1</td><td>3</td><td>4</td><td>4</td><td>1</td><td>4</td><td>2</td><td>1</td><td>2</td><td>2</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+                    <tr><td style="padding: 8px;">0</td><td>4</td><td>4</td><td>4</td><td>0</td><td>4</td><td>4</td><td>2</td><td>2</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            
+          </div>
+          <div class="container">
+              <h2>1. Feature Interaction Across Musical Eras</h2>
+              <img style="margin-left: 80px;" src="{{ url_for('static', filename='images/shap2.jpeg') }}" alt="shap">
+              <div class="con-bf">
+                <div class="text">
+                  <p>The SHAP interaction plot highlights how listening habits across eras work together to predict a user's preferred music era.</p>
+                  <li> Denser clusters indicate stronger feature interactions.</li>
+                  <li>Frequent listening to 90s music aligns closely with 2000s and 2020s patterns.</li>
+                  <li>Users engaging across eras often show a dominant preference driven by nostalgia or emotion.</li>
+                </div>
+              </div>
+          </div>
+          <div class="container">
+              <h2>2. Top Factors Driving Era Preference Prediction</h2>
+              <img src="{{ url_for('static', filename='images/shap.png') }}" alt="shap">
+              <div class="con-bf">
+                <div class="text">
+                  <p>This bar chart illustrates the most impactful features that influenced the model’s prediction of a user’s preferred music era.</p>
+                  <li>Emotional and nostalgic ties strongly impact preferences.</li>
+                  <li>Discovery sources such as social media, shape listening behavior.</li>
+                  <li>Cultural elements like grandparents' influence and song lyrics also play a key role.</li>
+                  <p>This proves that the user's emotional, social, and behavioral contexts deeply influence their musical preferences beyond just listening history.</p>
+                </div>
+              </div>
+          </div>
+          <div class="container">
+              <h2>3. Era Prediction Accuracy & Insights</h2>
+              <section style="padding: 20px;" class="model-results">
+                <h2 style="color: black;">Model Evaluation Results</h2>
+          
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Model</th>
+                      <th>Phase</th>
+                      <th>Accuracy</th>
+                      <th>Details</th>
+                      <th>Era Preference</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Random Forest Classifier -->
+                    <tr>
+                      <td rowspan="3">Random Forest</td>
+                      <td>Baseline</td>
+                      <td>72.62%</td>
+                      <td>-</td>
+                      <td>2000s: 57.86%<br>1990s: 23.81%<br>2020s: 18.33%</td>
+                    </tr>
+                    <tr>
+                      <td>GridSearchCV</td>
+                      <td>77.38%</td>
+                      <td>
+                        max_depth=25,<br>
+                        min_samples_leaf=2,<br>
+                        min_samples_split=5,<br>
+                        n_estimators=2000
+                      </td>
+                      <td>2000s: 57.86%<br>1990s: 23.81%<br>2020s: 18.33%</td>
+                    </tr>
+                    <tr>
+                      <td>Cross-Validation</td>
+                      <td>73.81%<br>(Mean: 72.93%)</td>
+                      <td>
+                        Scores: 69.12%, 77.61%,<br>
+                        74.63%, 71.64%, 71.64%
+                      </td>
+                      <td>2000s: 57.86%<br>1990s: 23.81%<br>2020s: 18.33%</td>
+                    </tr>
+          
+                    <!-- XGBoost Classifier -->
+                    <tr>
+                      <td rowspan="3">XGBoost</td>
+                      <td>Baseline</td>
+                      <td>76.19%</td>
+                      <td>-</td>
+                      <td>2000s: 57.86%<br>1990s: 23.81%<br>2020s: 18.33%</td>
+                    </tr>
+                    <tr>
+                      <td>GridSearchCV</td>
+                      <td>78.57%</td>
+                      <td>
+                        max_depth=6,<br>
+                        learning_rate=0.01,<br>
+                        min_child_weight=5,<br>
+                        n_estimators=500,<br>
+                        colsample_bytree=1.0,<br>
+                        subsample=1.0
+                      </td>
+                      <td>2000s: 65.48%<br>1990s: 23.81%<br>2020s: 10.71%</td>
+                    </tr>
+                    <tr>
+                      <td>Cross-Validation</td>
+                      <td>77.38%<br>(Mean: 74.41%)</td>
+                      <td>
+                        Scores: 72.06%, 73.13%,<br>
+                        79.10%, 79.10%, 68.66%
+                      </td>
+                      <td>2000s: 57.86%<br>1990s: 23.81%<br>2020s: 18.33%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <br>
+          
+              <div class="con-bf">
+                <div class="text">
+                </div>
+              </div>
+          </div>
+          <div class="container">
+            <h2>4. What Shapes Your Music Era Love?</h2>
+            <img src="{{ url_for('static', filename='images/heatmap2.png') }}" alt="shap">
+            <div class="con-bf">
+              <div class="text">
+                <p>This heatmap shows the correlation between all features used in the model.</p>
+                <li>Darker colors show stronger correlations</li>
+                <li>Most features show weak to moderate correlation, meaning minimal redundancy.</li>
+                <li>The red diagonal indicates perfect self-correlation; other areas stay light, suggesting low multicollinearity.</li>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <h2>5. What Connects Deep with Your Era Choice?</h2>
+            <img src="{{ url_for('static', filename='images/heatmap3.png') }}" alt="shap">
+            <div class="con-bf">
+              <div class="text">
+                <p>This bar graph highlights how strongly each feature correlates with a person’s preferred music era.</p>
+                <li>Top Positive Correlations:Nostalgic era (+0.40),Week preference (+0.31)</li>
+                <li>Negative Correlations:90s frequency (−0.43),Grandparents’ influence (−0.18)</li>
+                <p>Insight: Personal emotions and recent listening habits influence preferences more than traditional exposure routes like family or media.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <h2>6. Clustered Connections</h2>
+            <img src="{{ url_for('static', filename='images/heatmap1.png') }}" alt="shap">
+            <div class="con-bf">
+              <div class="text">
+                <p>Ever wondered how your listening patterns tie into your memories and emotions? <br> This clustered heatmap brings together 8 carefully chosen features that influence your music era preferences — helping us decode how they interact behind the scenes</p>
+                <li>Notable Positive Correlations:
+                  <ul>freq_90s & freq_2000s (0.45) <br> → Fans of the 90s often vibe with the 2000s too.</ul>
+                   <ul>nostalgic_era & week_preference (0.27) <br> → Nostalgic listeners tend to have consistent weekly habits.</ul></li>
+                <li>Negative Correlations:
+                   <ul>week_preference & freq_90s (−0.34) <br> → Regular listeners may not favor 90s hits.</ul>
+                   <ul>nostalgic_era & freq_90s (−0.41) <br> → Feeling nostalgic doesn’t always mean loving the 90s.</ul></li>
+                <p>Insight: This cluster highlights how memory, emotion, and weekly listening patterns shape modern music era preferences.</p>
+              </div>
+            </div>
+                 </div>
+          <div class="container">
+            <h2>7. Cluster-Powered Predictions</h2>
+            <section class="model-cards">
+              <h2 style="color: white;">Model Summary</h2>
+          
+              <div class="card">
+                <h3>Random Forest</h3>
+                <p><strong>Model Accuracy:</strong> 80.95%</p>
+                <p><strong>Best Hyperparameters:</strong><br>
+                  max_depth=20, min_samples_leaf=2,<br>
+                  min_samples_split=10, n_estimators=200
+                </p>
+                <p><strong>Predicted Era Preferences:</strong></p>
+                <ul>
+                  <li>2000s: 55.82% <span class="highlight">(most preferred)</span></li>
+                  <li>1990s: 26.66%</li>
+                  <li>2020s: 17.52%</li>
+                </ul>
+              </div>
+          
+              <div class="card">
+                <h3>XGBoost</h3>
+                <p><strong>Model Accuracy:</strong> 77.38%</p>
+                <p><strong>Best Hyperparameters:</strong><br>
+                  learning_rate=0.01, max_depth=3,<br>
+                  n_estimators=300, subsample=0.8
+                </p>
+                <p><strong>Predicted Era Preferences:</strong></p>
+                <ul>
+                  <li>2000s: 53.80%</li>
+                  <li>1990s: 27.58%</li>
+                  <li>2020s: 18.61%</li>
+                </ul>
+              </div>
+            </section>
+          <br>
+            <!-- <div  class="con-bf">
+              <div class="text">
+                <p>Insight: This cluster highlights how memory, emotion, and weekly listening patterns shape modern music era preferences.</p>
+              </div>
+            </div> -->
+                </div>
+        </div>
+
+        <div class="final">
+          <h2>Resonance of a Generation: The Music They Chose</h2>
+          <p>Music doesn't just fill the silence — it defines the silent emotions and stories that shape the music preferences of today’s youth. <br><br>
+            As we explored the rhythms of emotion, memory, and behavior, one truth echoed: music is memory. Our analysis revealed how nostalgia, emotional ties, weekday habits, and identity shape what today’s youth choose to hear. Listening patterns told stories — of comfort, escape, and connection — beyond sound alone. <br><br>
+            Amidst all eras, the 2000s rose as the most beloved. With its emotional storytelling, relatable lyrics, and genre diversity, it resonates deeply with a generation still shaping its sense of self. <br><br>
+            To them, the 2000s aren’t just songs — they’re memories, mirrors, and safe spaces.</p>
+        </div>
+        <div class="footer">
+          <h2>Krija Subramanian</h2>
+        </div>
+
+    </div>
+</body>
+</html>

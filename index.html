@@ -1,0 +1,91 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EchoWhisper</title>
+
+  <link rel="stylesheet" href="C:\Users\aswinraj\Desktop\Music_project\static\css\home.css" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home-media.css') }}">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Music&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Noto+Music&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+
+    <div class="headings">
+      <a href="{{ url_for('music') }}" class="nav-link">MUSIC</a>
+      <a href="{{ url_for('tools') }}" class="nav-link">TOOLS USED</a>
+    </div>
+
+    <div class="mid">
+      <div class="logo">
+        <img src="C:\Users\aswinraj\Desktop\Music_project\static\images\logo_W.png" alt="logo">
+      </div>
+      <div class="des">
+        <h3>"Feel the echo, live the rhythm, find your era"</h3>
+      </div>
+      <div class="check">
+        <button>Track the Trends</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>Krija Subramanian</h2>
+    </div>
+
+  </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EchoWhisper</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" />
+
+  <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora&family=Noto+Music&family=Playfair+Display&family=Poppins&family=Tangerine&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <div class="headings">
+      <a href="{{ url_for('music') }}" class="nav-link">MUSIC</a>
+      <a href="{{ url_for('tools') }}" class="nav-link">TOOLS USED</a>
+    </div>
+
+    <div class="mid">
+      <div class="logo">
+        <img src="{{ url_for('static', filename='images/logo_W.png') }}" alt="logo">
+      </div>
+      <div class="des">
+        <h3>"Feel the echo, live the rhythm, find your era"</h3>
+      </div>
+      <div class="check">
+        <a href="{{ url_for('analysis') }}"><button>Track the Trends</button></a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>Krija Subramanian</h2>
+    </div>
+  </div>
+</body>
+</html>
