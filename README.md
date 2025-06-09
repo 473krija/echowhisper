@@ -8,7 +8,7 @@ EchoWhisper is an Analytical Report Website that presents detailed findings from
 
 Data for this project was collected through a Google Form survey targeted exclusively at this age group to better understand the listening behavior of young people. The collected data was then analyzed using machine learning techniques such as Random Forest and XGBoost, along with SHAP analysis and clustering methods to extract meaningful insights. EchoWhisper showcases the results of this backend analysis in a clear and concise format for easy interpretation.
 
-#techniques used
+# techniques used
 The data collected from the Google Form was stored in an Excel CSV format, which allowed for easy handling and analysis using data science tools. Before applying any machine learning algorithms, the dataset underwent several preprocessing steps to ensure accuracy and quality of the analysis.
 
 Data Preprocessing
@@ -41,7 +41,7 @@ Unsupervised learning methods were used to group similar data points and identif
 
 This approach allowed us to thoroughly analyze the data and uncover significant patterns influencing the younger generation’s music preferences. The insights obtained from these techniques are presented through the EchoWhisper Analytical Report Website.
 
-#results
+# results
 The EchoWhisper Analytical Report Website showcases the comprehensive results obtained from the backend machine learning analysis. The key findings from the project include:
 
 Model Accuracy:
